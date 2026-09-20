@@ -88,7 +88,9 @@ const translations = {
         amenity_reception: "24/7 რეცეფცია", close_aria: "დახურვა",
         filter_desserts: "დესერტი", filter_drinks: "სასმელი", menu_filter_aria: "მენიუს კატეგორიები",
         menu_empty: "ვერაფერი მოიძებნა.",
-        chat_welcome: "გამარჯობა! მე ელზა ვარ 🤖 როგორ დაგეხმაროთ? აირჩიეთ კითხვა ან დაწერეთ საკუთარი."
+        chat_welcome: "გამარჯობა! მე ელზა ვარ 🤖 როგორ დაგეხმაროთ? აირჩიეთ კითხვა ან დაწერეთ საკუთარი.",
+        rules_header: "წესები და რეგულაციები",
+        rules_intro: "გთხოვთ, დაიცავით შემდეგი წესები — ეს უზრუნველყოფს კომფორტს ყველა სტუმრისთვის."
     },
     en: {
         tab_home: "Home", tab_services: "Services & Leisure", tab_menu: "Restaurant & Menu", tab_map: "Hotel Map", tab_rules: "Rules",
@@ -123,7 +125,9 @@ const translations = {
         amenity_reception: "24/7 Reception", close_aria: "Close",
         filter_desserts: "Desserts", filter_drinks: "Drinks", menu_filter_aria: "Menu categories",
         menu_empty: "No items found.",
-        chat_welcome: "Hello! I'm Elsa 🤖 How can I help? Choose a question or type your own."
+        chat_welcome: "Hello! I'm Elsa 🤖 How can I help? Choose a question or type your own.",
+        rules_header: "Rules and Regulations",
+        rules_intro: "Please follow these rules — this ensures comfort for all guests."
     },
     ru: {
         tab_home: "Главная", tab_services: "Услуги и развлечения", tab_menu: "Ресторан и меню", tab_map: "Карта отеля", tab_rules: "Правила",
@@ -158,7 +162,9 @@ const translations = {
         amenity_reception: "Круглосуточная рецепция", close_aria: "Закрыть",
         filter_desserts: "Десерты", filter_drinks: "Напитки", menu_filter_aria: "Категории меню",
         menu_empty: "Ничего не найдено.",
-        chat_welcome: "Здравствуйте! Я Эльза 🤖 Чем могу помочь? Выберите вопрос или напишите свой."
+        chat_welcome: "Здравствуйте! Я Эльза 🤖 Чем могу помочь? Выберите вопрос или напишите свой.",
+        rules_header: "Правила и регуляции",
+        rules_intro: "Пожалуйста, соблюдайте следующие правила — это обеспечит комфорт для всех гостей."
     }
 };
 

@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="ka">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#0f3d3e" id="theme-color-meta">
-    <meta name="description" content="Grand Hotel &amp; Spa — სასტუმროს სერვისები, რესტორანი, ინტერაქტიული რუკა და სტუმრის ასისტენტი.">
+    <meta name="description"
+        content="Grand Hotel &amp; Spa — სასტუმროს სერვისები, რესტორანი, ინტერაქტიული რუკა და სტუმრის ასისტენტი.">
     <title>Grand Hotel &amp; Spa</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏨%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 
     <!-- Тема применяется до отрисовки страницы, чтобы не было «вспышки» -->
     <script>
@@ -22,311 +28,365 @@
     </script>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- ============ ШАПКА ============ -->
-<header class="site-header">
-    <div class="container header-inner">
-        <a class="brand" href="#home" data-go="home" aria-label="Grand Hotel &amp; Spa">
-            <span class="brand-mark">GH</span>
-            <span class="brand-name">Grand Hotel &amp; Spa</span>
-        </a>
-        <div class="header-actions">
-            <button class="icon-btn" id="theme-toggle-btn" type="button"
-                    data-i18n-aria="theme_toggle_aria" aria-label="Toggle theme"></button>
-            <div class="lang-switch" role="group" aria-label="Language">
-                <button class="lang-btn" type="button" data-lang="ge" aria-pressed="true">GE</button>
-                <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
-                <button class="lang-btn" type="button" data-lang="ru" aria-pressed="false">RU</button>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- ============ ГЛАВНОЕ МЕНЮ (на телефоне заменяется нижней панелью) ============ -->
-<nav class="main-nav" aria-label="Main navigation">
-    <div class="container nav-scroll">
-        <a class="nav-tab" href="#home" data-tab="home" data-i18n="tab_home" aria-current="page">მთავარი</a>
-        <a class="nav-tab" href="#services" data-tab="services" data-i18n="tab_services">სერვისები და გართობა</a>
-        <a class="nav-tab" href="#menu" data-tab="menu" data-i18n="tab_menu">რესტორანი და მენიუ</a>
-        <a class="nav-tab" href="#map" data-tab="map" data-i18n="tab_map">სასტუმროს რუკა</a>
-        <a class="nav-tab" href="#rules" data-tab="rules" data-i18n="tab_rules">წესები</a>
-    </div>
-</nav>
-
-<main class="container page">
-
-    <!-- ============ ГЛАВНАЯ ============ -->
-    <section id="home" class="tab-content">
-        <div class="hero">
-            <div class="hero-copy">
-                <span class="eyebrow">GRAND HOTEL &amp; SPA</span>
-                <h1 data-i18n="welcome_title">მოგესალმებით Grand Hotel &amp; Spa-ში</h1>
-                <p data-i18n="welcome_desc">ჩვენი სასტუმრო გთავაზობთ უმაღლესი დონის კომფორტს, ულამაზეს ხედებსა და მრავალფეროვან სერვისებს.</p>
-                <div class="hero-actions">
-                    <button class="btn btn-primary" type="button" data-go="map" data-i18n="hero_map_btn">რუკის ნახვა</button>
-                    <button class="btn btn-secondary" type="button" data-go="services" data-i18n="hero_services_btn">სერვისების ნახვა</button>
+    <!-- ============ ШАПКА ============ -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home" data-go="home" aria-label="Grand Hotel &amp; Spa">
+                <span class="brand-mark">GH</span>
+                <span class="brand-name">Grand Hotel &amp; Spa</span>
+            </a>
+            <div class="header-actions">
+                <button class="icon-btn" id="theme-toggle-btn" type="button" data-i18n-aria="theme_toggle_aria"
+                    aria-label="Toggle theme"></button>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button class="lang-btn" type="button" data-lang="ge" aria-pressed="true">GE</button>
+                    <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+                    <button class="lang-btn" type="button" data-lang="ru" aria-pressed="false">RU</button>
                 </div>
             </div>
-            <div class="hero-stat">
-                <span class="stat-icon" aria-hidden="true">✦</span>
-                <strong>24/7</strong>
-                <span data-i18n="reception">რეცეფცია</span>
-            </div>
         </div>
+    </header>
 
-
-        <ul class="amenities">
-            <li class="amenity"><span data-icon="wifi"></span><span data-i18n="wifi">უფასო Wi-Fi</span></li>
-            <li class="amenity"><span data-icon="parking"></span><span data-i18n="parking">უფასო პარკინგი</span></li>
-            <li class="amenity"><span data-icon="concierge"></span><span data-i18n="amenity_reception">24/7 რეცეფცია</span></li>
-            <li class="amenity"><span data-icon="coffee"></span><span data-i18n="coffee">უფასო ყავა/ჩაი</span></li>
-        </ul>
-
-        <div class="section-heading">
-            <div>
-                <span class="eyebrow">DISCOVER</span>
-                <h2 data-i18n="gallery_title">სასტუმროს ფოტოგალერეა</h2>
-            </div>
+    <!-- ============ ГЛАВНОЕ МЕНЮ (на телефоне заменяется нижней панелью) ============ -->
+    <nav class="main-nav" aria-label="Main navigation">
+        <div class="container nav-scroll">
+            <a class="nav-tab" href="#home" data-tab="home" data-i18n="tab_home" aria-current="page">მთავარი</a>
+            <a class="nav-tab" href="#services" data-tab="services" data-i18n="tab_services">სერვისები და გართობა</a>
+            <a class="nav-tab" href="#menu" data-tab="menu" data-i18n="tab_menu">რესტორანი და მენიუ</a>
+            <a class="nav-tab" href="#map" data-tab="map" data-i18n="tab_map">სასტუმროს რუკა</a>
+            <a class="nav-tab" href="#rules" data-tab="rules" data-i18n="tab_rules">წესები</a>
         </div>
-        <div class="gallery">
-            <figure>
-                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&amp;q=85" alt="" loading="lazy" decoding="async">
-                <figcaption data-i18n="gallery_1">სასტუმროს ხედი</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=900&amp;q=85" alt="" loading="lazy" decoding="async">
-                <figcaption data-i18n="gallery_2">კომფორტული ნომრები</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&amp;q=85" alt="" loading="lazy" decoding="async">
-                <figcaption data-i18n="gallery_3">აუზი და დასვენება</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&amp;q=85" alt="" loading="lazy" decoding="async">
-                <figcaption data-i18n="gallery_4">რესტორანი</figcaption>
-            </figure>
-        </div>
-    </section>
+    </nav>
 
-    <!-- ============ УСЛУГИ (карточки рисует app.js) ============ -->
-    <section id="services" class="tab-content" hidden>
-        <div class="section-heading">
-            <div>
-                <span class="eyebrow">STAY &amp; RELAX</span>
-                <h2 data-i18n="tab_services">სერვისები და გართობა</h2>
-            </div>
-            <span class="section-count" id="services-count"></span>
-        </div>
-        <div class="cards-grid" id="services-list"></div>
-    </section>
+    <main class="container page">
 
-    <!-- ============ РЕСТОРАН И МЕНЮ (карточки рисует app.js) ============ -->
-    <section id="menu" class="tab-content" hidden>
-        <div class="section-heading">
-            <div>
-                <span class="eyebrow">DINING</span>
-                <h2 data-i18n="menu_header">კვება და რესტორანი</h2>
-            </div>
-            <span class="section-count" id="menu-count"></span>
-        </div>
-        <div class="menu-toolbar">
-            <div class="menu-filter" role="group" data-i18n-aria="menu_filter_aria" aria-label="Menu categories">
-                <button class="filter-btn" type="button" data-category="all" aria-pressed="true" data-i18n="filter_all">ყველა</button>
-                <button class="filter-btn" type="button" data-category="breakfast" aria-pressed="false" data-i18n="filter_breakfast">საუზმე</button>
-                <button class="filter-btn" type="button" data-category="lunch" aria-pressed="false" data-i18n="filter_lunch">სადილი</button>
-                <button class="filter-btn" type="button" data-category="dinner" aria-pressed="false" data-i18n="filter_dinner">ვახშამი</button>
-                <button class="filter-btn" type="button" data-category="desserts" aria-pressed="false" data-i18n="filter_desserts">დესერტი</button>
-                <button class="filter-btn" type="button" data-category="drinks" aria-pressed="false" data-i18n="filter_drinks">სასმელი</button>
-            </div>
-            <label class="search-box">
-                <span data-icon="search"></span>
-                <input id="menu-search" type="search" autocomplete="off"
-                       data-i18n-placeholder="menu_search_placeholder" data-i18n-aria="menu_search_placeholder"
-                       placeholder="მენიუში ძიება...">
-            </label>
-        </div>
-        <div class="cards-grid" id="menu-list"></div>
-    </section>
-
-    <!-- ============ КАРТА ОТЕЛЯ (всё содержимое рисует app.js) ============ -->
-    <section id="map" class="tab-content" hidden>
-        <div class="map-page">
-            <header class="map-head">
-                <div class="map-head-copy">
-                    <span class="eyebrow">HOTEL MAP</span>
-                    <h2 data-i18n="map_header">სასტუმროს რუკა</h2>
-                    <p data-i18n="map_info">აირჩიეთ კორპუსი ან ტერიტორია, დააჭირეთ ობიექტს — გამოჩნდება მდებარეობა, საათები და დეტალები.</p>
+        <!-- ============ ГЛАВНАЯ ============ -->
+        <section id="home" class="tab-content">
+            <div class="hero">
+                <div class="hero-copy">
+                    <span class="eyebrow">GRAND HOTEL &amp; SPA</span>
+                    <h1 data-i18n="welcome_title">მოგესალმებით Grand Hotel &amp; Spa-ში</h1>
+                    <p data-i18n="welcome_desc">ჩვენი სასტუმრო გთავაზობთ უმაღლესი დონის კომფორტს, ულამაზეს ხედებსა და
+                        მრავალფეროვან სერვისებს.</p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" type="button" data-go="map" data-i18n="hero_map_btn">რუკის
+                            ნახვა</button>
+                        <button class="btn btn-secondary" type="button" data-go="services"
+                            data-i18n="hero_services_btn">სერვისების ნახვა</button>
+                    </div>
                 </div>
-                <ul class="map-stats" id="map-stats" data-i18n-aria="map_stats_aria"></ul>
-            </header>
+                <div class="hero-stat">
+                    <span class="stat-icon" aria-hidden="true">✦</span>
+                    <strong>24/7</strong>
+                    <span data-i18n="reception">რეცეფცია</span>
+                </div>
+            </div>
 
-            <div class="map-toolbar">
-                <div class="map-floor-tabs" id="map-floor-tabs" role="group" data-i18n-aria="map_floor_aria"></div>
 
-                <label class="map-search">
+            <ul class="amenities">
+                <li class="amenity"><span data-icon="wifi"></span><span data-i18n="wifi">უფასო Wi-Fi</span></li>
+                <li class="amenity"><span data-icon="parking"></span><span data-i18n="parking">უფასო პარკინგი</span>
+                </li>
+                <li class="amenity"><span data-icon="concierge"></span><span data-i18n="amenity_reception">24/7
+                        რეცეფცია</span></li>
+                <li class="amenity"><span data-icon="coffee"></span><span data-i18n="coffee">უფასო ყავა/ჩაი</span></li>
+            </ul>
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">DISCOVER</span>
+                    <h2 data-i18n="gallery_title">სასტუმროს ფოტოგალერეა</h2>
+                </div>
+            </div>
+            <div class="gallery">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&amp;q=85" alt=""
+                        loading="lazy" decoding="async">
+                    <figcaption data-i18n="gallery_1">სასტუმროს ხედი</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=900&amp;q=85" alt=""
+                        loading="lazy" decoding="async">
+                    <figcaption data-i18n="gallery_2">კომფორტული ნომრები</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&amp;q=85" alt=""
+                        loading="lazy" decoding="async">
+                    <figcaption data-i18n="gallery_3">აუზი და დასვენება</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&amp;q=85" alt=""
+                        loading="lazy" decoding="async">
+                    <figcaption data-i18n="gallery_4">რესტორანი</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ============ УСЛУГИ (карточки рисует app.js) ============ -->
+        <section id="services" class="tab-content" hidden>
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">STAY &amp; RELAX</span>
+                    <h2 data-i18n="tab_services">სერვისები და გართობა</h2>
+                </div>
+                <span class="section-count" id="services-count"></span>
+            </div>
+            <div class="cards-grid" id="services-list"></div>
+        </section>
+
+        <!-- ============ РЕСТОРАН И МЕНЮ (карточки рисует app.js) ============ -->
+        <section id="menu" class="tab-content" hidden>
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">DINING</span>
+                    <h2 data-i18n="menu_header">კვება და რესტორანი</h2>
+                </div>
+                <span class="section-count" id="menu-count"></span>
+            </div>
+            <div class="menu-toolbar">
+                <div class="menu-filter" role="group" data-i18n-aria="menu_filter_aria" aria-label="Menu categories">
+                    <button class="filter-btn" type="button" data-category="all" aria-pressed="true"
+                        data-i18n="filter_all">ყველა</button>
+                    <button class="filter-btn" type="button" data-category="breakfast" aria-pressed="false"
+                        data-i18n="filter_breakfast">საუზმე</button>
+                    <button class="filter-btn" type="button" data-category="lunch" aria-pressed="false"
+                        data-i18n="filter_lunch">სადილი</button>
+                    <button class="filter-btn" type="button" data-category="dinner" aria-pressed="false"
+                        data-i18n="filter_dinner">ვახშამი</button>
+                    <button class="filter-btn" type="button" data-category="desserts" aria-pressed="false"
+                        data-i18n="filter_desserts">დესერტი</button>
+                    <button class="filter-btn" type="button" data-category="drinks" aria-pressed="false"
+                        data-i18n="filter_drinks">სასმელი</button>
+                </div>
+                <label class="search-box">
                     <span data-icon="search"></span>
-                    <input id="map-search" type="search" autocomplete="off"
-                           data-i18n-placeholder="map_search_placeholder" data-i18n-aria="map_search_placeholder"
-                           placeholder="ობიექტის ძიება...">
-                </label>
-
-                <label class="map-select">
-                    <span class="map-select-icon" data-icon="filter"></span>
-                    <select id="map-category" data-i18n-aria="map_category_label"></select>
-                    <span class="map-select-chevron" data-icon="chevronDown"></span>
+                    <input id="menu-search" type="search" autocomplete="off"
+                        data-i18n-placeholder="menu_search_placeholder" data-i18n-aria="menu_search_placeholder"
+                        placeholder="მენიუში ძიება...">
                 </label>
             </div>
+            <div class="cards-grid" id="menu-list"></div>
+        </section>
 
-            <ul class="map-legend" id="map-legend" aria-hidden="true"></ul>
+        <!-- ============ КАРТА ОТЕЛЯ (всё содержимое рисует app.js) ============ -->
+        <section id="map" class="tab-content" hidden>
+            <div class="map-page">
+                <header class="map-head">
+                    <div class="map-head-copy">
+                        <span class="eyebrow">HOTEL MAP</span>
+                        <h2 data-i18n="map_header">სასტუმროს რუკა</h2>
+                        <p data-i18n="map_info">აირჩიეთ კორპუსი ან ტერიტორია, დააჭირეთ ობიექტს — გამოჩნდება მდებარეობა,
+                            საათები და დეტალები.</p>
+                    </div>
+                    <ul class="map-stats" id="map-stats" data-i18n-aria="map_stats_aria"></ul>
+                </header>
 
-            <div class="map-layout">
-                <div class="map-card">
-                    <p class="map-card-title">GRAND HOTEL &amp; SPA · SITE PLAN</p>
-                    <div class="map-stage" id="map-stage">
-                        <svg class="map-svg" viewBox="0 0 1000 620" role="img" data-i18n-aria="map_stage_aria">
-                            <g id="map-plan"></g>
-                            <g id="map-route"></g>
-                        </svg>
-                        <div class="map-pins" id="map-pins"></div>
-                        <div class="map-levels" id="map-level-switch" role="group" data-i18n-aria="map_floor_aria"></div>
-                        <div class="map-compass" aria-hidden="true">
-                            <span>N</span>
-                            <span data-icon="compass"></span>
+                <div class="map-toolbar">
+                    <div class="map-floor-tabs" id="map-floor-tabs" role="group" data-i18n-aria="map_floor_aria"></div>
+
+                    <label class="map-search">
+                        <span data-icon="search"></span>
+                        <input id="map-search" type="search" autocomplete="off"
+                            data-i18n-placeholder="map_search_placeholder" data-i18n-aria="map_search_placeholder"
+                            placeholder="ობიექტის ძიება...">
+                    </label>
+
+                    <label class="map-select">
+                        <span class="map-select-icon" data-icon="filter"></span>
+                        <select id="map-category" data-i18n-aria="map_category_label"></select>
+                        <span class="map-select-chevron" data-icon="chevronDown"></span>
+                    </label>
+                </div>
+
+                <ul class="map-legend" id="map-legend" aria-hidden="true"></ul>
+
+                <div class="map-layout">
+                    <div class="map-card">
+                        <p class="map-card-title">GRAND HOTEL &amp; SPA · SITE PLAN</p>
+                        <div class="map-stage" id="map-stage">
+                            <svg class="map-svg" viewBox="0 0 1000 620" role="img" data-i18n-aria="map_stage_aria">
+                                <g id="map-plan"></g>
+                                <g id="map-route"></g>
+                            </svg>
+                            <div class="map-pins" id="map-pins"></div>
+                            <div class="map-levels" id="map-level-switch" role="group" data-i18n-aria="map_floor_aria">
+                            </div>
+                            <div class="map-compass" aria-hidden="true">
+                                <span>N</span>
+                                <span data-icon="compass"></span>
+                            </div>
                         </div>
                     </div>
+
+                    <aside class="map-list-panel">
+                        <div class="map-list-inner">
+                            <h3 data-i18n="map_select_title">აირჩიეთ ობიექტი</h3>
+                            <p data-i18n="map_list_hint">დააჭირეთ ობიექტს მდებარეობისა და დეტალების სანახავად</p>
+                            <ul class="map-list" id="map-list"></ul>
+                        </div>
+                    </aside>
                 </div>
 
-                <aside class="map-list-panel">
-                    <div class="map-list-inner">
-                        <h3 data-i18n="map_select_title">აირჩიეთ ობიექტი</h3>
-                        <p data-i18n="map_list_hint">დააჭირეთ ობიექტს მდებარეობისა და დეტალების სანახავად</p>
-                        <ul class="map-list" id="map-list"></ul>
+                <article class="map-detail" id="map-detail" aria-live="polite">
+                    <div class="map-detail-media" id="map-detail-media"></div>
+                    <div class="map-detail-body">
+                        <div class="map-detail-head">
+                            <span class="map-detail-icon" id="map-detail-icon"></span>
+                            <h3 id="map-detail-title"></h3>
+                            <ul class="map-chips">
+                                <li class="map-chip"><span data-icon="layers"></span><span id="map-detail-floor"></span>
+                                </li>
+                                <li class="map-chip"><span data-icon="clock"></span><span id="map-detail-hours"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="map-detail-desc" id="map-detail-desc"></p>
+                        <a class="map-detail-contact" href="tel:001">
+                            <span data-icon="phone"></span>
+                            <span data-i18n="details_contact">დაუკავშირდით რეცეფციას · 001</span>
+                        </a>
+                        <button class="map-route-btn" id="map-route-btn" type="button" aria-pressed="false">
+                            <span data-icon="pin"></span>
+                            <span id="map-route-label"></span>
+                        </button>
                     </div>
-                </aside>
+                </article>
             </div>
+        </section>
 
-            <article class="map-detail" id="map-detail" aria-live="polite">
-                <div class="map-detail-media" id="map-detail-media"></div>
-                <div class="map-detail-body">
-                    <div class="map-detail-head">
-                        <span class="map-detail-icon" id="map-detail-icon"></span>
-                        <h3 id="map-detail-title"></h3>
-                        <ul class="map-chips">
-                            <li class="map-chip"><span data-icon="layers"></span><span id="map-detail-floor"></span></li>
-                            <li class="map-chip"><span data-icon="clock"></span><span id="map-detail-hours"></span></li>
-                        </ul>
-                    </div>
-                    <p class="map-detail-desc" id="map-detail-desc"></p>
-                    <a class="map-detail-contact" href="tel:001">
-                        <span data-icon="phone"></span>
-                        <span data-i18n="details_contact">დაუკავშირდით რეცეფციას · 001</span>
-                    </a>
-                    <button class="map-route-btn" id="map-route-btn" type="button" aria-pressed="false">
-                        <span data-icon="pin"></span>
-                        <span id="map-route-label"></span>
-                    </button>
+        <!-- ============ ПРАВИЛА ЗАВЕДЕНИЯ (карточки рисует app.js) ============ -->
+        <section id="rules" class="tab-content" hidden>
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">HOUSE RULES</span>
+                    <h2 data-i18n="rules_header">წესები და რეგულაციები</h2>
                 </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- ============ ПРАВИЛА ЗАВЕДЕНИЯ (карточки рисует app.js) ============ -->
-<section id="rules" class="tab-content" hidden>
-    <div class="section-heading">
-        <div>
-            <span class="eyebrow">HOUSE RULES</span>
-            <h2 data-i18n="rules_header">წესები და რეგულაციები</h2>
-        </div>
-        <span class="section-count" id="rules-count"></span>
-    </div>
-    <p class="rules-intro" data-i18n="rules_intro">გთხოვთ, დაიცავით შემდეგი წესები — ეს უზრუნველყოფს კომფორტს ყველა სტუმრისთვის.</p>
-    <div class="rules-grid" id="rules-list"></div>
-</section>
-
-</main>
-
-<!-- ============ ПОДВАЛ ============ -->
-<footer class="footer">
-    <div class="container footer-inner">
-        <div>
-            <strong>Grand Hotel &amp; Spa</strong>
-            <span><span data-i18n="reception">რეცეფცია</span> <a href="tel:001">001</a></span>
-        </div>
-        <span>© 2026 Hotel Guest Service System</span>
-    </div>
-</footer>
-
-<!-- ============ ПЛАВАЮЩИЕ КНОПКИ: конвертер валют и чат ============ -->
-<div class="floating-tools">
-    <div class="tool-wrap">
-        <div class="currency-panel" id="currency-panel" role="dialog" aria-labelledby="currency-panel-title" hidden>
-            <div class="panel-head">
-                <strong id="currency-panel-title" data-i18n="currency_title">ვალუტის კონვერტორი</strong>
-                <button id="currency-close-btn" type="button" data-i18n-aria="close_aria" aria-label="Close">×</button>
+                <span class="section-count" id="rules-count"></span>
             </div>
-            <div class="currency-grid">
-                <label><span>₾ GEL</span><input type="number" min="0" step="0.01" value="100" data-currency="GEL" id="currency-gel-input"></label>
-                <label><span>$ USD</span><input type="number" min="0" step="0.01" data-currency="USD"></label>
-                <label><span>€ EUR</span><input type="number" min="0" step="0.01" data-currency="EUR"></label>
+            <p class="rules-intro" data-i18n="rules_intro">
+                გთხოვთ, დაიცავით შემდეგი წესები — ეს უზრუნველყოფს კომფორტს ყველა სტუმრისთვის.
+            </p>
+            <div class="rules-grid" id="rules-list"></div>
+        </section>
+
+    </main>
+
+    <!-- ============ ПОДВАЛ ============ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>Grand Hotel &amp; Spa</strong>
+                <span><span data-i18n="reception">რეცეფცია</span> <a href="tel:001">001</a></span>
             </div>
-            <p class="currency-note" id="currency-note">კურსი იტვირთება...</p>
+            <span>© 2026 Hotel Guest Service System</span>
         </div>
-        <button class="floating-btn currency-btn" id="currency-toggle-btn" type="button" aria-expanded="false"
+    </footer>
+
+    <!-- ============ ПЛАВАЮЩИЕ КНОПКИ: конвертер валют и чат ============ -->
+    <div class="floating-tools">
+        <div class="tool-wrap">
+            <div class="currency-panel" id="currency-panel" role="dialog" aria-labelledby="currency-panel-title" hidden>
+                <div class="panel-head">
+                    <strong id="currency-panel-title" data-i18n="currency_title">ვალუტის კონვერტორი</strong>
+                    <button id="currency-close-btn" type="button" data-i18n-aria="close_aria"
+                        aria-label="Close">×</button>
+                </div>
+                <div class="currency-grid">
+                    <label><span>₾ GEL</span><input type="number" min="0" step="0.01" value="100" data-currency="GEL"
+                            id="currency-gel-input"></label>
+                    <label><span>$ USD</span><input type="number" min="0" step="0.01" data-currency="USD"></label>
+                    <label><span>€ EUR</span><input type="number" min="0" step="0.01" data-currency="EUR"></label>
+                </div>
+                <p class="currency-note" id="currency-note">კურსი იტვირთება...</p>
+            </div>
+            <button class="floating-btn currency-btn" id="currency-toggle-btn" type="button" aria-expanded="false"
                 data-i18n-aria="currency_toggle_aria" aria-label="Currency converter">↔</button>
-    </div>
-
-    <div class="tool-wrap">
-        <div class="chat-window" id="chat-window" role="dialog" aria-labelledby="chat-title" hidden>
-            <div class="chat-header">
-                <div class="chat-person">
-                    <span class="chat-avatar">E</span>
-                    <div>
-                        <strong id="chat-title" data-i18n="chat_title">ელზა — თქვენი ასისტენტი</strong>
-                        <small data-i18n="chat_online">ონლაინ • სასტუმროს ინფორმაცია</small>
-                    </div>
-                </div>
-                <button id="chat-close-btn" type="button" data-i18n-aria="close_aria" aria-label="Close">×</button>
-            </div>
-            <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
-            <div class="chat-quick-questions" id="chat-quick-questions"></div>
-            <div class="chat-input-row">
-                <input id="chat-text-input" type="text" autocomplete="off"
-                       data-i18n-placeholder="chat_input_placeholder" data-i18n-aria="chat_input_placeholder"
-                       placeholder="დაწერეთ შეკითხვა...">
-                <button id="chat-send-btn" type="button" data-i18n-aria="chat_send_aria" aria-label="Send">➤</button>
-            </div>
         </div>
-        <button class="floating-btn chat-btn" id="chat-toggle-btn" type="button" aria-expanded="false"
+
+        <div class="tool-wrap">
+            <div class="chat-window" id="chat-window" role="dialog" aria-labelledby="chat-title" hidden>
+                <div class="chat-header">
+                    <div class="chat-person">
+                        <span class="chat-avatar">E</span>
+                        <div>
+                            <strong id="chat-title" data-i18n="chat_title">ელზა — თქვენი ასისტენტი</strong>
+                            <small data-i18n="chat_online">ონლაინ • სასტუმროს ინფორმაცია</small>
+                        </div>
+                    </div>
+                    <button id="chat-close-btn" type="button" data-i18n-aria="close_aria" aria-label="Close">×</button>
+                </div>
+                <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+                <div class="chat-quick-questions" id="chat-quick-questions"></div>
+                <div class="chat-input-row">
+                    <input id="chat-text-input" type="text" autocomplete="off"
+                        data-i18n-placeholder="chat_input_placeholder" data-i18n-aria="chat_input_placeholder"
+                        placeholder="დაწერეთ შეკითხვა...">
+                    <button id="chat-send-btn" type="button" data-i18n-aria="chat_send_aria"
+                        aria-label="Send">➤</button>
+                </div>
+            </div>
+            <button class="floating-btn chat-btn" id="chat-toggle-btn" type="button" aria-expanded="false"
                 data-i18n-aria="chat_open_aria" aria-label="Open chat"><span aria-hidden="true">✦</span></button>
+        </div>
     </div>
-</div>
 
-<!-- ============ НИЖНЯЯ НАВИГАЦИЯ (только телефон / планшет) ============ -->
-<nav class="bottom-nav" aria-label="Mobile navigation">
-    <a href="#home" data-tab="home" aria-current="page">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        <span data-i18n="nav_home">Home</span>
-    </a>
-    <a href="#services" data-tab="services">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-        <span data-i18n="nav_services">Services</span>
-    </a>
-    <a href="#menu" data-tab="menu">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
-        <span data-i18n="nav_menu">Menu</span>
-    </a>
-    <a href="#map" data-tab="map">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
-        <span data-i18n="nav_map">Hotel Map</span>
-    </a>
-    <a href="#rules" data-tab="rules">
-       <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12h6"/><path d="M9 16h4"/><path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/></svg>
-       <span data-i18n="nav_rules">Rules</span>
-</a>
+    <!-- ============ НИЖНЯЯ НАВИГАЦИЯ (только телефон / планшет) ============ -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="#home" data-tab="home" aria-current="page">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            <span data-i18n="nav_home">Home</span>
+        </a>
+        <a href="#services" data-tab="services">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                <line x1="12" y1="22.08" x2="12" y2="12" />
+            </svg>
+            <span data-i18n="nav_services">Services</span>
+        </a>
+        <a href="#menu" data-tab="menu">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                <line x1="6" y1="1" x2="6" y2="4" />
+                <line x1="10" y1="1" x2="10" y2="4" />
+                <line x1="14" y1="1" x2="14" y2="4" />
+            </svg>
+            <span data-i18n="nav_menu">Menu</span>
+        </a>
+        <a href="#map" data-tab="map">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
+                <line x1="8" y1="2" x2="8" y2="18" />
+                <line x1="16" y1="6" x2="16" y2="22" />
+            </svg>
+            <span data-i18n="nav_map">Hotel Map</span>
+        </a>
+        <a href="#rules" data-tab="rules">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 12h6" />
+                <path d="M9 16h4" />
+                <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" />
+                <path d="M14 3v4h4" />
+            </svg>
+            <span data-i18n="nav_rules">Rules</span>
+        </a>
 
-</nav>
+    </nav>
 
-<script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
